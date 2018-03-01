@@ -11,6 +11,11 @@ Rails.application.routes.draw do
 #         PUT    /users/:id(.:format)      users#update
 #         DELETE /users/:id(.:format)      users#destroy
 
+get '/login', to: 'sessions#new'
+get '/logout', to: 'sessions#destroy'
+post '/sessions', to: 'sessions#create'
+
+
 resources :questions
 
 # questions GET    /questions(.:format)          questions#index
