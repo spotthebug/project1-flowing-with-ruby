@@ -1,0 +1,10 @@
+<h1>Ask your question</h1>
+
+<%= form_with model: @question do |f| %>
+
+  <%= f.text_field :title, placeholder: "Title" %><br><br>
+  <%= f.text_area :description, size: "30x15", placeholder: "Enter your question here" %><br><br>
+  <%= f.text_field :user_id, placeholder: "Enter user id (temp)" %><br>
+  <%= f.submit "Submit" %>
+
+<% end %>
