@@ -16,7 +16,9 @@ get '/logout', to: 'sessions#destroy'
 post '/sessions', to: 'sessions#create'
 
 
-resources :questions
+resources :questions do
+  resources :answers
+end
 
 # questions GET    /questions(.:format)          questions#index
 #           POST   /questions(.:format)          questions#create
