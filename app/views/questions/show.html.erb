@@ -1,8 +1,10 @@
-<div class=up> 
+<p> TEst</p>
+<div class=up> <%=button_to 'Up', '/votes' %>
 </div>
-<h3><%= @votes.count %></h3>
+
 
 <div class=down>
+  <div class=down> <%=button_to 'Down', '/votes' %>
 </div>
 <h3><%= @question.title %></h3>
 <%= @question.description %><br>

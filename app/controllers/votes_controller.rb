@@ -1,9 +1,14 @@
 class VotesController < ApplicationController
   
+  # def new
+  #   @user = current_user
+  #   @question = Question.find(params[:question_id])
+  # end
+  
   def create
-    @question = Question.find(params[:id])
-
-    if @question.votes.create(user_id: current_user.id)
+    @user = current_user
+    @question = Question.find(params[:question_id])
+    if @question.votes.create(user: @user)
       flash[:notice] =  "Thank you for upvoting!"
       redirect_to(@question)
     else 
@@ -13,4 +18,3 @@ class VotesController < ApplicationController
   end
 end
 
-end
