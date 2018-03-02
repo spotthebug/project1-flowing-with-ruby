@@ -1,12 +1,13 @@
-<%= @question.title %><br>
+<h3><%= @question.title %></h3>
 <%= @question.description %><br>
 <br>
 <br>
+<h3><%= @answers.count %> Answers</h3>
 <% @answers.each do |answer| %>
- <%= answer.description %><br>
+ <%= answer.description %><br><br>
 <%end %>
 
-<h1>Your Answer Here</h1>
+<h3>Your Answer Here</h3>
 
 <%= form_with model: @answer, url: "/questions/#{@question.id}/answers" do |f| %>
 

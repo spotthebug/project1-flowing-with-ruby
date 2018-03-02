@@ -17,7 +17,7 @@ class QuestionsController < ApplicationController
     if @question.save
       redirect_to questions_path
     else
-      flash[:error] = "Unable to save question"
+      flash[:error] = "Unable to save the question!"
       redirect_to new_question_path
     end
   end
