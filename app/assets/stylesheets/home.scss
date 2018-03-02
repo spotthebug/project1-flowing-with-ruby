@@ -1,0 +1,91 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header{
+  text-decoration: none;
+  text-align: center;
+  font-size: 67px;
+  font-family: 'Indie Flower', cursive;
+}
+li{
+  display: inline;
+  // line-height: 14px;
+  margin-left: 300px;
+  font-size: 22px;
+  cursor: pointer;
+  // background-color: black;
+}
+
+button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+nav{
+  background-color: black;
+}
+
+h1{
+  text-align: center;
+}
+
+p {
+justify-content: center;
+}
+.works{
+  display: inline-block;
+  justify-content: center;
+  background-color: silver;
+  margin-left: 300px;
+  padding: 10px;
+  // width: 1570px;
+  // height: 150px;
+  border-radius: 25px;
+
+}
+.circle{
+// width:300px;
+//  height:360px;
+//  border-radius:170px;
+ margin-left: 3em;
+ background-image: url("<%= app/assets/images/mario-1.jpg %>")
+ // background-color: purple;
+}
+
+
+.carousel-item{
+  width:100%;
+  height:1000%;
+  object-fit: fill;
+  margin-top: 60px;
+}
+.carousel-indicators li{// toggle buttons on slideshow
+    width: 8px;
+    height: 40px;
+    margin: 0;
+    text-indent: 0;
+    padding-left:8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+    background-color:white;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+  }
+
+
+footer{
+width:100%;
+text-align: center;
+background-color: black;
+display: block;
+margin-bottom: 10px;
+color: white;
+padding-bottom: 2%;
+}
