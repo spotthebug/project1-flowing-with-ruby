@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  # resources :users do
-  #   resources :questions, except: [:index, :show] do
-  #     resources :answers, except: [:show]
-  #   end
-  # end
+  get "/" => 'home#index'
 
   resources :users
 
