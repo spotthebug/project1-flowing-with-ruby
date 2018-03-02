@@ -17,5 +17,6 @@ Rails.application.routes.draw do
 
   # get '/questions', to: 'questions#index'
   # get '/questions/:id', to: 'questions#show'
-
+  get '/votes', to: 'votes#new'
+  post '/votes', to: 'votes#create'
 end
