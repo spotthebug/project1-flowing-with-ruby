@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
-get "/" => 'home#index'
+  get "/" => 'home#index'
 
+  resources :users
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :questions do
+    resources :answers
+  end
+
+  get '/login', to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
+  post '/sessions', to: 'sessions#create'
+
+  # get '/questions', to: 'questions#index'
+  # get '/questions/:id', to: 'questions#show'
+
 end

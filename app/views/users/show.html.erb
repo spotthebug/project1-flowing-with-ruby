@@ -1,0 +1,5 @@
+<div>
+  <% if @user.id == session[:user_id] %>
+    Welcome, <%= @user.name %>!
+  <% end %>
+</div>
