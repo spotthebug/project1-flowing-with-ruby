@@ -11,8 +11,6 @@
 <%= form_with model: @answer, url: "/questions/#{@question.id}/answers" do |f| %>
 
   <%= f.text_area :description, size: "30x15", placeholder: "Enter your answer here" %><br><br>
-  <%= f.text_field :user_id, placeholder: "Enter user id (temp)" %><br>
-
   <%= f.submit "Submit" %>
 
 <% end %>
