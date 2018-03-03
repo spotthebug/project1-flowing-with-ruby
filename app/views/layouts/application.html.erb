@@ -6,20 +6,43 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Lato:400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   </head>
 
   <body>
-    <ul>
-      <% if current_user %>
-      <li><%= link_to "Log Out", logout_path %></li>
-      <% else %>
-      <li><%= link_to "Create Account", new_user_path %></li>
-      <li><%= link_to "Log In", login_path %></li>
-      <% end %>
-    </ul>
+    <header>
+      <ul>
+        <% if current_user %>
+        <li><%= link_to "Log Out", logout_path %></li>
+        <% else %>
+        <li><%= link_to "Create Account", new_user_path %></li>
+        <li><%= link_to "Log In", login_path %></li>
+        <li><%= link_to "Questions", questions_path %></li>
+
+        <% end %>
+      </ul>
+      <h1> Flowing with Ruby </h1>
+    </header>
     <% flash.each do |name, msg| %>
-    <div><%= msg %></div>
+      <div><%= msg %></div>
     <% end %>
     <%= yield %>
+    <footer>
+
+      <p> Contact Us</p>
+
+      <section class="footer-style">
+      <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+      <a href="https://github.com/spotthebug/project1-flowing-with-ruby"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+    </section>
+
+      <p class="copyright">&copy; &nbsp Garima &nbsp Karthik &nbsp Omar &nbsp Mario, &nbsp 2018</p>
+    </footer>
   </body>
 </html>
