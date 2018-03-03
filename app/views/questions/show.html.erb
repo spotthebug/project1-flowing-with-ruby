@@ -1,10 +1,10 @@
-<p> TEst</p>
-<div class=up> <%=button_to 'Up', '/votes' %>
+
+<div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote" %>
 </div>
 
-
+<h3><%= @votes.count %></h3>
 <div class=down>
-  <div class=down> <%=button_to 'Down', '/votes' %>
+  <div class=down> <%=button_to 'Down', "/questions/#{@question.id}/downvote" %>
 </div>
 <h3><%= @question.title %></h3>
 <%= @question.description %><br>
