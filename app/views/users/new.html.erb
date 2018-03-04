@@ -1,3 +1,12 @@
+<header>
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Log In", login_path %></li>
+    <li><%= link_to "Questions", questions_path %></li>
+  </ul>
+  <h1> Flowing with Ruby </h1>
+</header>
+
 <h1>Sign up</h1>
 
 <%= form_with model: @user do |f| %>
@@ -9,4 +18,3 @@
 
 <% end %>
 
-<p>Already registered? <%= link_to "Login", login_path %></p>
