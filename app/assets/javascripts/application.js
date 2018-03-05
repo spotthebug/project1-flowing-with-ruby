@@ -13,8 +13,22 @@
 
 
 
-//= require turbolinks
-
-
+//= require jquery
+//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).on('turbolinks:load',function(){
+$('.upVote').on('mouseenter', function () {
+	$(this).addClass('greenVote');
+});
+$('.upVote').on('mouseleave', function () {
+	$(this).removeClass('greenVote');
+});
+
+$('.downVote').on('mouseenter', function () {
+	$(this).addClass('redVote');
+});
+$('.downVote').on('mouseleave', function () {
+	$(this).removeClass('redVote');
+});
+});

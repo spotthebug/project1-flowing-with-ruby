@@ -1,9 +1,9 @@
-<div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote" %>
+<div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote", {class: 'upVote'} %>
 </div>
 
-<h3><%= @vote_diff %></h3>
+<h3 id='voteTest'><%= @vote_diff %></h3>
 <div class=down>
-  <div class=down> <%=button_to 'Down', "/questions/#{@question.id}/downvote" %>
+  <div class=down> <%=button_to 'Down', "/questions/#{@question.id}/downvote", {class: 'downVote'} %>
 </div>
 <header>
   <ul>
