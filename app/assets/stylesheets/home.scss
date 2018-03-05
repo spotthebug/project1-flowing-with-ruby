@@ -1,91 +1,108 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-header{
-  text-decoration: none;
-  text-align: center;
-  font-size: 67px;
-  font-family: 'Indie Flower', cursive;
-}
-li{
-  display: inline;
-  // line-height: 14px;
-  margin-left: 300px;
-  font-size: 22px;
-  cursor: pointer;
-  // background-color: black;
+
+body {
+  margin: 0;
 }
 
-button{
-  background-color: black;
-  border: none;
+header {
+  margin-top: 0;
+  background-color:  #df7020;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.1em;
 }
 
-nav{
-  background-color: black;
+header ul {
+  margin-top: 0;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 8.7em;
+  padding-right: 9em;
+  padding-top: 0.2em;
+}
+
+header li a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Mina', sans-serif;
 }
 
 h1{
   text-align: center;
+  font-size: 2.4em;
+  padding-bottom: 0.2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 p {
 justify-content: center;
+font-family: 'Mina', sans-serif;
 }
+
 .works{
+  margin-top:1.5em;
   display: inline-block;
-  justify-content: center;
-  background-color: silver;
-  margin-left: 300px;
-  padding: 10px;
-  // width: 1570px;
-  // height: 150px;
-  border-radius: 25px;
-
-}
-.circle{
-// width:300px;
-//  height:360px;
-//  border-radius:170px;
- margin-left: 3em;
- background-image: url("<%= app/assets/images/mario-1.jpg %>")
- // background-color: purple;
+  text-align: center;
+  background-color:  #e6e6e6;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.1em;
+  padding: 0.5em 21.5em 0.5em 21.5em;
+  margin: 1em 2em 1em 2em;
 }
 
-
-.carousel-item{
-  width:100%;
-  height:1000%;
-  object-fit: fill;
-  margin-top: 60px;
+.works h2 {
+  margin: 0.2em;
 }
-.carousel-indicators li{// toggle buttons on slideshow
-    width: 8px;
-    height: 40px;
-    margin: 0;
-    text-indent: 0;
-    padding-left:8px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10%;
-    background-color:white;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
-  }
 
+.flex-container {
+ display: flex;
+ flex-direction: row;
+ max-width: 100%;
+}
+
+.flex-container > div {
+  flex: 1;
+  margin-left: 2.1em;
+}
+
+.flex-container > p {
+  overflow-wrap: break-word;
+  flex: 1;
+}
+
+.about {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: 'Mina', sans-serif;
+}
 
 footer{
-width:100%;
-text-align: center;
-background-color: black;
-display: block;
-margin-bottom: 10px;
-color: white;
-padding-bottom: 2%;
+  letter-spacing: 0.1em;
+  margin-top: 1em;
+  padding-top: 0.1em;
+  width:100%;
+  text-align: center;
+  background-color:  #df7020;
+  display: block;
+  color: white;
+  padding-bottom: 0.1em;
+  text-transform: uppercase;
+}
+
+i {
+  margin-right: 1em;
+  z-index: 100;
+  color: white;
 }

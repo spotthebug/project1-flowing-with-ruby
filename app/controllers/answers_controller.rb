@@ -8,9 +8,7 @@ class AnswersController < ApplicationController
 
   def create
     @user = current_user
-    puts @user
     @question = Question.find(params[:question_id])
-    puts @question
     if @user
       @answer = @question.answers.new(answer_params)
       @answer.user_id = @user.id
