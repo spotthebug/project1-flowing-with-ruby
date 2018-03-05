@@ -8,3 +8,12 @@
 .redVote {
   background-color: red;
 }
+
+.voteQuestion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.downVote {
+  margin-right: 3em;
+}

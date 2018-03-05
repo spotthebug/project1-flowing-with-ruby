@@ -1,10 +1,4 @@
-<div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote", {class: 'upVote'} %>
-</div>
 
-<h3 id='voteTest'><%= @vote_diff %></h3>
-<div class=down>
-  <div class=down> <%=button_to 'Down', "/questions/#{@question.id}/downvote", {class: 'downVote'} %>
-</div>
 <header>
   <ul>
     <% if current_user %>
@@ -19,10 +13,21 @@
   </ul>
   <h1> Flowing with Ruby </h1>
 </header>
+<div class="voteQuestion">
+  <div class="voteDiv">
+    <div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote", {class: 'upVote'} %>
+    </div>
 
-<h3><%= @question.title %></h3>
-<%= @question.description %><br>
+    <h3 id='voteTest'><%= @vote_diff %></h3>
+      <div class=down> <%=button_to 'Down', "/questions/#{@question.id}/downvote", {class: 'downVote'} %>
+    </div>
+  </div>
+  <div class="questionDiv">
+    <h3><%= @question.title %></h3>
+    <%= @question.description %><br>
+  </div>
 <br>
+</div>
 <br>
 <h3><%= @answers.count %> Answers</h3>
 <% @answers.each do |answer| %>
