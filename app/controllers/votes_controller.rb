@@ -11,10 +11,9 @@ class VotesController < ApplicationController
     @vote = @question.votes.new(user: @user)
     @vote.is_upvote = true
     if @vote.save
-      flash[:notice] =  "Thank you for voting!"
       redirect_to(@question)
     else 
-      flash[:notice] =  "You have already upvoted this!"
+      flash[:notice] =  "You have already voted!"
       redirect_to(@question)
     end
   end
@@ -25,10 +24,9 @@ class VotesController < ApplicationController
     @vote = @question.votes.new(user: @user)
     @vote.is_upvote = false
     if @vote.save
-      flash[:notice] =  "Thank you for voting!"
       redirect_to(@question)
     else 
-      flash[:notice] =  "You have already downvoted this!"
+      flash[:notice] =  "You have already voted!"
       redirect_to(@question)
     end
   end
