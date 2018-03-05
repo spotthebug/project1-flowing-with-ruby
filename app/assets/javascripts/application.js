@@ -12,7 +12,9 @@
 //
 
 
+
 //= require turbolinks
+
 
 //= require turbolinks
 //= require_tree .
