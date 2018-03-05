@@ -11,5 +11,10 @@
 // about supported directives.
 //
 
+
+
+//= require turbolinks
+
+
 //= require turbolinks
 //= require_tree .

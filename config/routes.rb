@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   # get '/questions/:id', to: 'questions#show'
   root 'home#index'
 
+  post '/questions/:question_id/upvote', to: 'votes#upvote'
+  post '/questions/:question_id/downvote', to: 'votes#downvote'
 end
