@@ -1,3 +1,10 @@
+<div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote" %>
+</div>
+
+<h3><%= @vote_diff %></h3>
+<div class=down>
+  <div class=down> <%=button_to 'Down', "/questions/#{@question.id}/downvote" %>
+</div>
 <header>
   <ul>
     <% if current_user %>
@@ -20,7 +27,7 @@
 <h3><%= @answers.count %> Answers</h3>
 <% @answers.each do |answer| %>
  <%= answer.description %><br><br>
-<%end %>
+<% end %>
 
 <h3>Your Answer Here</h3>
 
@@ -30,4 +37,3 @@
   <%= f.submit "Submit" %>
 
 <% end %>
-
