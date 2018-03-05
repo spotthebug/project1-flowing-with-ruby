@@ -7,6 +7,7 @@
       <li><%= link_to "Sign Up", new_user_path %></li>
       <li><%= link_to "Log In", login_path %></li>
       <li><%= link_to "Questions", questions_path %></li>
+      <li><%= link_to "About US", "#about-us" %></li>
     <% end %>
   </ul>
   <h1> Flowing with Ruby </h1>
@@ -14,30 +15,42 @@
 
 <div class="works">
   <h2> How it works ? </h2>
-  <p> First Anybody can ask a question</p>
-  <p>Second Anybody can answer</p>
-  <p>Third The best answers are voted up and rise to the top
-  </p>
+
+  <div >
+    <p>Flowing with ruby is a question and answer site for users and developers. Join and ask! It only takes a minute: </p>
+    <button> Sign Up</button></p>
+    <p> Anybody can ask a question <%= image_tag("answer.png") %>
+    <br>
+    Anybody can answer <%= image_tag("question.png") %><br>
+    The best answers are voted up and rise to the top <%= image_tag("answermultiple.png") %>
+    </p>
+
+  </div>
 </div>
 
-<h2 class="about"> About Us </h2>
+<h2 class="about" id="about-us"> About Us </h2>
 
 <div class="flex-container">
   <div>
-    <%= image_tag("marionew1.png")%>
-    <p> Lorem ipsum dolor sit amet magna aliqua.</p>
+    <%= image_tag("garima.png")%>
+    <p>
+      I am always looking to challenge myself and learn something new. The tech industry has transformative powers and as a Web Developer, my aim is to utilize these superpowers to not only solve business challenges but also make a profound social impact.
+  </p>
+  </div>
+  <div>
+    <%= image_tag("karthik.png")%>
+    <p>Easygoing web development student with an interest in JavaScript and video games. Skills are both technical and creative. I look forward to connecting. Skills: C++, Java, HTML, CSS, JavaScript, jQuery.
+ </p>
+  </div>
+  <div>
+    <%= image_tag("omar.png")%>
+    <p> Attending school in becoming a Web Developer and a huge sports fan. Likes to stay active on the weekends either with projects and or being with friends and family.
+    </p>
   </div>
   <div>
     <%= image_tag("marionew1.png")%>
-    <p>Duis aute irure dolor in reprehenderit proident.</p>
-  </div>
-  <div>
-    <%= image_tag("marionew1.png")%>
-    <p> Excepteur sint occaecat cupidatat non proident.</p>
-  </div>
-  <div>
-    <%= image_tag("marionew1.png")%>
-    <p> Excepteur sint occaecat cupidatat non proident.</p>
+    <p> I am an experienced project manager and artist that has chosen to take my varied skills into technology. At this time, I am honing my front end skills in html, css, javascript, jquery, and ajax as well as working on the backend using Ruby on Rails and Postgresql.
+</p>
   </div>
 </div>
 
