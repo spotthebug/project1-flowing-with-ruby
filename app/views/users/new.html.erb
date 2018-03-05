@@ -7,14 +7,14 @@
   <h1> Flowing with Ruby </h1>
 </header>
 
-<h1>Sign up</h1>
+<h2>Sign up</h2>
 
-<%= form_with model: @user do |f| %>
+<%= form_with model: @user, class: "form-style" do |f| %>
 
-  Name: <%= f.text_field :name %><br>
-  Email: <%= f.email_field :email %><br>
-  Password: <%= f.password_field :password %><br>
-  <%= f.submit "Submit" %>
+  <%= f.text_field :name, placeholder: "Name", class: "name" %><br>
+  <%= f.email_field :email, placeholder: "Email", class: "email" %><br>
+  <%= f.password_field :password, placeholder: "Password",class: "pass" %><br>
+  <%= f.submit "Submit", class: "button" %>
 
 <% end %>
 
