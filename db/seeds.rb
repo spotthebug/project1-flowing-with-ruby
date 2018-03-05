@@ -6,17 +6,17 @@ Answer.delete_all
 Question.delete_all
 User.delete_all
 
-
 5.times do
-  u = User.create!(
-    name: Faker::Name.name,
-    email: Faker::Internet.safe_email,
+  User.create!(
+    name: "Garima Jain",
+    email: garima@example.com,
     password: "password"
     )
+  
     2.times do
-      q = Question.create!(
-        title: Faker::Lorem.sentence,
-        description: Faker::Lorem.paragraph,
+      Question.create!(
+        title: 
+        description: 
         user: u
         )
       q.votes << Vote.create(is_upvote: true, user: u)
@@ -30,3 +30,29 @@ User.delete_all
         a.votes << Vote.create(is_upvote: true, user: u)
     end
 end
+
+a = User.create(name: 'Omar', email: 'omar@email.com', password: 'password')
+b = User.create(name: 'Garima', email: 'garima@email.com', password: 'password')
+c = User.create(name: 'Mario', email: 'mario@email.com', password: 'password')
+d = User.create(name: 'Karthik', email: 'karthik@email.com', password: 'password')
+one = Question.create(title: '', description: '', user: '')
+two = Question.create(title: '', description: '', user: '')
+three = Question.create(title: '', description: '', user: '')
+four = Question.create(title: '', description: '', user: '')
+five = Question.create(title: '', description: '', user: '')
+six = Question.create(title: '', description: '', user: '')
+seven = Question.create(title: '', description: '', user: '')
+eight = Question.create(title: '', description: '', user: '')
+nine = Question.create(title: '', description: '', user: '')
+ten = Question.create(title: '', description: '', user: '')
+
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
+Answer.create(description: '', user: , question: ,)
