@@ -24,7 +24,7 @@
   </div>
   <div class="questionDiv">
     <h3><%= @question.title %></h3>
-    <%= @question.description %><br>
+    <%= simple_format(@question.description) %><br>
   </div>
 </div>
 <hr>
@@ -32,7 +32,7 @@
 <div id="show-answer">
   <h3><%= @answers.count %> Answers</h3>
   <% @answers.each do |answer| %>
-   <div><%= answer.description %></div>
+   <div><%= simple_format(answer.description) %></div>
    <br>
    <br>
   <% end %>
