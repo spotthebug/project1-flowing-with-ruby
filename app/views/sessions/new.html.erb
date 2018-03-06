@@ -1,4 +1,4 @@
-<header>
+<header class="questions-nav">
   <ul>
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Sign Up", new_user_path %></li>
@@ -9,13 +9,14 @@
 
 <h2 id="login">Login</h2>
 
-
-<%= form_with model: @user, url: "/sessions", method: "post", class: "form-style" do |f| %>
-  <div>
-    <%= f.email_field :email, placeholder: "Email", class: "mail" %>
-  </div>
-  <div>
-    <%= f.password_field :password, placeholder: "Password", class: "pass" %>
-  </div>
-  <%= f.submit "Log In", class: "button" %>
-<% end %>
+<div class="manage-padding">
+  <%= form_with model: @user, url: "/sessions", method: "post", class: "form-style" do |f| %>
+    <div>
+      <%= f.email_field :email, placeholder: "Email", class: "mail" %>
+    </div>
+    <div>
+      <%= f.password_field :password, placeholder: "Password", class: "pass" %>
+    </div>
+    <%= f.submit "Log In", class: "button" %>
+  <% end %>
+</div>

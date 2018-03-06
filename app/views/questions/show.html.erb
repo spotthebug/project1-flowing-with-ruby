@@ -1,5 +1,5 @@
 
-<header>
+<header class="questions-nav">
   <ul>
     <% if current_user %>
       <li><%= link_to "Home", root_path %></li>
@@ -15,7 +15,7 @@
 </header>
 <div class="voteQuestion">
   <div class="voteDiv">
-    <div class=up> <%=button_to 'Up', "/questions/#{@question.id}/upvote", {class: 'upVote'} %>
+    <div class=up> <%=button_to '  Up  ', "/questions/#{@question.id}/upvote", {class: 'upVote'} %>
     </div>
 
     <h3 id='voteTest'><%= @vote_diff %></h3>
@@ -26,19 +26,26 @@
     <h3><%= @question.title %></h3>
     <%= @question.description %><br>
   </div>
-<br>
 </div>
-<br>
-<h3><%= @answers.count %> Answers</h3>
-<% @answers.each do |answer| %>
- <%= answer.description %><br><br>
-<% end %>
+<hr>
 
-<h3>Your Answer Here</h3>
+<div id="show-answer">
+  <h3><%= @answers.count %> Answers</h3>
+  <% @answers.each do |answer| %>
+   <div><%= answer.description %></div>
+   <br>
+   <br>
+  <% end %>
+</div>
+<hr>
 
-<%= form_with model: @answer, url: "/questions/#{@question.id}/answers" do |f| %>
+<div class="answer-form">
+  <h2>Your Answer Here</h2>
 
-  <%= f.text_area :description, size: "30x15", placeholder: "Enter your answer here" %><br><br>
-  <%= f.submit "Submit" %>
+  <%= form_with model: @answer, url: "/questions/#{@question.id}/answers" do |f| %>
 
-<% end %>
+    <%= f.text_area :description, placeholder: "Enter your answer here", class: "description" %><br><br>
+    <%= f.submit "Submit", class: "button" %>
+
+  <% end %>
+</div>

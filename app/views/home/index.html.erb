@@ -17,8 +17,9 @@
   <h2> How it works ? </h2>
 
   <div >
-    <p>Flowing with ruby is a question and answer site for users and developers. Join and ask! It only takes a minute: </p>
-    <button> Sign Up</button></p>
+    <p>Flowing with ruby is a question and answer site for users and developers. Join and ask! It only takes a minute: <br>
+    <button><%= link_to 'Sign Up', new_user_path %></button></p>
+
     <p> Anybody can ask a question <%= image_tag("answer.png") %>
     <br>
     Anybody can answer <%= image_tag("question.png") %><br>
@@ -27,6 +28,14 @@
 
   </div>
 </div>
+
+<h2 id="question-h2">Questions</h2>
+<div class="question-style">
+  <% @questions.each do |question| %>
+  <p id="question"> <%= link_to question.title, question_path(question) %> </p>
+  <% end %>
+</div>
+
 
 <h2 class="about" id="about-us"> About Us </h2>
 

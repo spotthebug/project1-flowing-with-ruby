@@ -1,5 +1,5 @@
 <% if current_user %>
-  <header>
+  <header class="questions-nav">
     <ul>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Questions", questions_path %></li>
@@ -7,12 +7,16 @@
     </ul>
     <h1> Flowing with Ruby </h1>
   </header>
-  <h2>Ask your question</h2>
-  <%= form_with model: @question do |f| %>
 
-    <%= f.text_field :title, placeholder: "Title" %><br><br>
-    <%= f.text_area :description, size: "30x15", placeholder: "Enter your question here" %><br><br>
-    <%= f.submit "Submit" %>
-  <% end %>
+  <div class="answer-form">
+    <h2>Ask your question</h2>
+    <%= form_with model: @question do |f| %>
+
+      <%= f.text_field :title, placeholder: "Title", class: "title" %><br><br>
+      <%= f.text_area :description, placeholder: "Enter your question here", class: "description" %><br><br>
+      <%= f.submit "Submit", class: "button" %>
+    <% end %>
+  </div>
+
 <% end %>
 
