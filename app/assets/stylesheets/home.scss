@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -51,6 +52,11 @@ h2 {
   font-family: 'Mina', sans-serif;
   font-size: 2em;
   z-index: 100;
+}
+
+#question-h2 {
+margin-top: 2.7em;
+margin-bottom: 1.4em;
 
 }
 
@@ -73,12 +79,17 @@ p {
 
 button{
   background-color: #215AAE;
-  color: white;
   padding: 1em 4em;
   border: none;
   border-radius: 4px;
   font-family: 'Mina', sans-serif;
   font-size: 0.7em;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+
 }
 
 button:hover{

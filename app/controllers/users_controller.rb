@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login(@user)
-      redirect_to @user
+      redirect_to questions_path
       flash[:notice] = "You successfully joined Flowing With Ruby"
     else
       flash[:error] = @user.errors.full_messages.join(" ")

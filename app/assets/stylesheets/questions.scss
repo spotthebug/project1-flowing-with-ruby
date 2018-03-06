@@ -1,19 +1,85 @@
 // Place all the styles related to the Questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.questions-nav li {
+  display: inline-block;
+  margin-left: 11.2em;
+  padding-right: 6em;
+  padding-top: 0.2em;
+}
+
 .greenVote {
   background-color: green;
+  border-radius: 15%;
 }
 
 .redVote {
   background-color: red;
+  border-radius: 15%;
+
 }
 
 .voteQuestion {
   display: flex;
-  justify-content: space-between;
+  margin: 0em 0em 1em 2em;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.1em;
+}
+
+#show-answer {
+  margin: 0em 0em 3em 2em;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.1em;
 }
 
 .downVote {
   margin-right: 3em;
 }
+
+#question a{
+  text-decoration: none;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.1em;
+  margin: 2em 2em 2em 2em;
+  color: black;
+}
+
+#question a:hover {
+  color: #215AAE;
+}
+
+.question-style {
+  margin-bottom: 3em;
+  background-color: #e6e6e6;
+  margin: 1.5em 2em 5em 2em;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.1em;
+}
+
+.answer-form {
+   margin: 0em 0em 3em 2em;
+}
+
+.answer-form h2{
+  text-align: left;
+}
+
+.description{
+ padding: 3em 20em 10em 1em;
+ border: 1px solid black;
+ border-radius: 4px;
+ font-family: 'Mina', sans-serif;
+ font-size: 1.1em;
+}
+
+.title{
+ padding: 1.3em 20em 0.3em 1em;
+ border: 1px solid black;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-bottom: 2em;
+ font-family: 'Mina', sans-serif;
+ font-size: 1.1em;
+}
+
