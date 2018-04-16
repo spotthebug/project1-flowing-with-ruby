@@ -4,7 +4,7 @@
 Flowing with Ruby is inspired by Stack Overflow. The main goal of the app is provide a learning platform to every Rubyist or ruby enthusiast.  
  
 ### Demo 
-https://warm-taiga-81336.herokuapp.com/questions/21
+https://warm-taiga-81336.herokuapp.com
 
 ### Tech Stack
 Backend - Ruby on Rails 
