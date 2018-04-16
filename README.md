@@ -1,21 +1,25 @@
-# README
+# Flowing-with-Ruby
 
- Flowing with ruby is a clone type of StackOverflow
- but specifically ask and answer questions of the
- Ruby language. With in our project you can go ahead and Sign Up and Log In. If you Sign Up you can post question and answers on it and have the option to up vote or down vote a question. So the first step was the white boarding and agreeing on the idea. After that it was to create models, controllers and views with most of the logic. We set up a schedule for all the tasks we wanted to complete by and who in the team was completing it.
- After using the white board we brought the wire frame to a more virtual design using Indesign.
-
-  User Stories was to get a new user to the site. After that they are welcomed with How it works, then you can browse questions and even search for answers. the link to our app is on and working on Heroku.
-  Garima Jain [9:47 AM]
+### About
+Flowing with Ruby is inspired by Stack Overflow. The main goal of the app is provide a learning platform to every Rubyist or ruby enthusiast.  
+ 
+### Demo 
 https://warm-taiga-81336.herokuapp.com/questions/21
-Languages that were used in the project was of coursed Ruby, HTML, CSS, Jquery, Rails, Postgresql. Also used a google search bar API in our questions page.
 
+### Tech Stack
+Backend - Ruby on Rails 
+FrontEnd - HTML, Ruby, CSS and JQuery
 
-  Our wish list would be to allow our users to keep track of the questions they asked or answers they posted. Also to add the functionality to the voting but for the answer not just only the questions. Then for allowing users that posted the particular question and answer to be able to edit in it. Lastly would to be allow users to comment on Questions and Answers and edit them as well.
+### Features
+- Our app opens onto the Home page, which is laid out in three section, the first section gives users instructions on how to use the Website, the second section lists the Top 5 Questions and the last section is information about the developer team
+- The Home Page also allows a User to Sign Up or Login or continue to browse through the Question and Answers without signing up or logging in
+- The Questions Page displays the top 15 questions in the order of most recently created
+- User can click on the question to view details about it and view the answers associated with that question
+- For a User to be able to post a Question / Answer or vote on a Question, the user needs to be logged in, without which this functionality won’t be available
 
-  Contributors GitHub accounts
-  Garima Jain: https://github.com/spotthebug
-  Mario Alcantar: https://github.com/camario25
-  Karthik Ram: https://github.com/KarthikSRam
-  Omar Hernandez: https://github.com/cubamex209
-  
+### Contributors GitHub accounts
+Garima Jain: https://github.com/spotthebug
+Mario Alcantar: https://github.com/camario25
+Karthik Ram: https://github.com/KarthikSRam
+Omar Hernandez: https://github.com/cubamex209
+
