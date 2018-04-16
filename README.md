@@ -19,7 +19,10 @@ FrontEnd - HTML, Ruby, CSS and JQuery
 
 ### Contributors GitHub accounts
 Garima Jain: https://github.com/spotthebug
+
 Mario Alcantar: https://github.com/camario25
+
 Karthik Ram: https://github.com/KarthikSRam
+
 Omar Hernandez: https://github.com/cubamex209
 
